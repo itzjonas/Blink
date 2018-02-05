@@ -1,0 +1,35 @@
+div > .row {
+    height: 100px;
+}
+
+.p1,
+.p2 {
+    background: #000;
+}
+
+.p1 {
+    animation: blink1 1s infinite;
+    opacity: 0;
+}
+
+.p2 {
+    animation: blink2 2s infinite;
+    opacity: 1;
+}
+
+.p3 {
+    animation: blink1 1s infinite;
+    opacity: 0;
+}
+
+@keyframes blink1 {
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes blink2 {
+    90% {
+        opacity: 0;
+    }
+}
